@@ -1,0 +1,27 @@
+{
+    "name": "test",
+    "version": "0.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MeiLi227/test.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/MeiLi227/test/issues"
+    },
+    "homepage": "https://github.com/MeiLi227/test#readme",
+    "dependencies": {
+      "ejs": "^3.1.8",
+      "express": "^4.18.2",
+      "formidable": "^2.1.1",
+      "nedb-promises": "^6.2.1",
+      "probe-image-size": "^7.2.3"
+    }
+  }
