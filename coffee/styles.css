@@ -1,0 +1,79 @@
+.panel {
+    bottom: 0;
+    min-height: 100vh;
+    left: 0;
+    right: 0;
+    position: sticky;
+}
+
+.panel:nth-child(1) {
+    z-index: 5;
+}
+
+.panel:nth-child(2) {
+    z-index: 4;
+}
+
+.panel:nth-child(3) {
+    z-index: 3;
+}
+
+.panel:nth-child(4) {
+    z-index: 2;
+}
+.panel:nth-child(5) {
+    z-index: 1;
+}
+
+.info,
+.panel {
+    background-color: #03121b;
+}
+
+.panel {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    color: rgba(52, 83, 97, 0.9);
+}
+
+.panel:nth-child(1) {
+    background-image: url("CounterPic.jpeg");
+}
+
+.panel:nth-child(2) {
+    background-image: url("Food.jpg");
+}
+
+.panel:nth-child(3) {
+    background-image: url("Drink.jpg");
+}
+
+.panel:nth-child(4) {
+    background-image: url("WallDoor.JPG");
+}
+
+.panel:nth-child(5) {
+    background-image: url("Window.jpg");
+}
+
+.panel-content {
+    align-content: center;
+    background: rgba(132, 119, 91, 0.516);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    background: linear-gradient(to right, rgb(241, 234, 219), white)
+}
+
+img {
+    width: 23%;
+
+}

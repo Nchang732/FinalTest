@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffe簡介</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+    <meta charset="UTF-8">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width+device-width, initial-scale=1.0">
+<<<<<<< HEAD:bookstarp/index3 copy 2.html
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+ 
+     <!-- Popper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+=======
+ 
+ <!-- Boostrap 導入程式 -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+>>>>>>> 078e0db088f72da8fbb2f9eb60f90bb4089d3221:bookstarp/coffee/index3 copy 2.html
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    body{
+        overflow-x: hidden;
+        background: #fff;
+        min-height: 100vh;
+    }
+    header{
+        position: fixed;
+        background: linear-gradient(to top, #fff, #ddd);
+        top:0;
+        left:0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+    .logo{
+        color: #3e0a22;
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+    .nav li{
+        list-style: none;
+    }
+    .nav li a{
+        text-decoration: none;
+        padding: 6px 15px;
+        color:#112434;
+        border-radius: 20px;
+    }
+    nav li a:hover, nva li a.active{
+        background: #112434;
+        color: #fff;
+    }
+    .parallax{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .parallax img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+    }
+    .parallax::before {
+        content: '';
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        width: 110%;
+        height: 50px;
+        z-index: 1000;
+        filter: blur(8px);
+        background: linear-gradient(to bottom,hsl(195, 80%, 26%),  #112434);
+    }
+    #title{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 4em;
+        color: #112434;
+    }
+    .content{
+        position: relative;
+        padding: 50px 100px;
+        background: #112434;
+        color: #fff;
+    }
+    .content h2{
+        font-size: 3em;
+        margin:15px;
+    }
+    .content p{
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand navbar-light">
+             <h2>第四市場</h2>
+              <div class="navbar-collapse" id="lokinav">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item"><a class="nav-link" href="index4.html">首頁</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index3 copy 2.html">簡介</a></li>
+                  <li class="nav-item"><a class="nav-link" href="BG.html">場地介紹</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Taichung4thMarket.html">菜單</a></li>
+                
+                  <li class="nav-item"><a class="nav-link" href="about.html">店家資訊</a></li>
+                </ul>
+              </div>
+          </nav>
+    </header>
+    <section class="parallax">
+        <h2 id="title">第四市場</h2>
+        <img src="coffe01.png" id="coffe01">
+        <img src="coffe06.png" id="coffe06">
+   
+        <img src="coffe02.png" id="coffe02">
+    
+        <img src="coffe05.png" alt="coffe05">
+    </section>
+    <div class="row tab-pane fade show active"id="roomA">
+        <!-- row>col content A-->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="old03.JPG" class="card-img-top">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="old01.jpg" class="card-img-top">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="old04.jpg" class="card-img-top">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+    <div class="content">
+    <h2>簡介</h2>
+        <p>歷史建築臺中市第四市場,於昭和7年(1932)創立，舊稱干城町消費市場（亦稱第四消費市場），隨著鄰近的建國市場設立、聚落人口的流失，
+            消費人口大不如前，導致第四市場逐漸沒落，因而歇業，面臨拆除危機,後又因年久失修，木造建築腐朽殘破，於民國51年(1962)改建，
+            規模包括可容納24個攤位的市場建築，6間二層樓之連棟店舖住宅，辦公室、垃圾場與廁所等。民國104年（2015）以其與常民生活相關，
+            具歷史文化價值，建築仍存部份舊有構件與形貌，能體現地域風貌，
+            並深具再利用潛力，公告登錄為歷史建築。2021年12月重新開幕。</p>
+            <h2>市場沿革</h2>
+            <p>
+              1901年　市場所在地於明治34年編入市區計畫（今日進化路以西土地編入市區計劃範圍），
+              
+              1914年　大正3年編入干城町，
+              
+              1932年　昭和7年在第四市場現址開設公設消費市場「干城町市場」，
+              
+              1962年　第四市場既有建築全面改建，屋頂設置太子樓，
+              
+              1972年　建國市場設立，因地緣太過接近，造成第四市場競爭力下降，逐漸沒落，
+              
+              2000年　第四市場前面南京路拓寬，市場整體面積縮小，消費功能不再，
+              
+              2015年　臺中市第四市場登錄為歷史建築，
+              
+              2021年　4月 由「傳動經營管理顧問股份有限公司」取得經營權。</p>
+    </div>
+    <script>
+
+        gsap.to("#title", {
+           color: "blue", 
+           rotation: 360,
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+        gsap.to("#coffe02", {
+           scale:2, 
+           duration:5,
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 30%",
+             end: "top 10%",
+             scrub: true,
+             markers: true
+           }
+        });
+
+        gsap.to("#coffe05", {
+           scale:0.8, 
+           duration:5,
+           transformOrigin: "50% 100%",
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+
+        gsap.to("#coffe06", {
+           x:-300, 
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+        gsap.to("#", {
+           x:300, 
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+    
+
+        
+    </script>
+</body>
+</html>
